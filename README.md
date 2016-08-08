@@ -1,6 +1,6 @@
 # ZHLocalizationStringManger
 
-[![Build Status](https://travis-ci.org/15038777234/ZHLocalizationStringManger.svg?branch=master)](https://travis-ci.org/15038777234/ZHLocalizationStringManger)
+[![Build Status](https://travis-ci.org/15038777234/ZHLocalizationStringManger.svg?branch=master)](https://travis-ci.org/15038777234/ZHLocalizationStringManger) ![](https://img.shields.io/badge/pod-v1.0.0-brightgreen.svg) ![](https://img.shields.io/badge/Platform-iOS-brightgreen.svg)
 
 Can facilitate the management localization language
 
@@ -33,5 +33,7 @@ How to change languages
    ```
 
    ​
+
+
 
 
