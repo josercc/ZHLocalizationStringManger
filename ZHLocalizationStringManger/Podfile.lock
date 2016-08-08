@@ -1,0 +1,10 @@
+PODS:
+  - ZHAlertController (0.0.2)
+
+DEPENDENCIES:
+  - ZHAlertController (~> 0.0.2)
+
+SPEC CHECKSUMS:
+  ZHAlertController: 331692e200b5aab8a569012ea2f7a5e39f06e8b6
+
+COCOAPODS: 0.39.0

@@ -7,21 +7,50 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import "ZHLocalizationStringManger.h"
+#import <ZHAlertController/ZHAlertController.h>
+@interface ViewController ()<UIActionSheetDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    NSArray *_localizationStrings;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.titleLabel.text = [NSString stringWithFormat:@"Current Localization:%@  -  %@",[ZHLocalizationStringManger shareLocalizable].nomarLocalizable,NSLocalizedString(@"Hello", @"HELLO")];
+//    self.titleLabel.text = @"dssaddsa";
+
+
     // Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)changeLocalization:(id)sender {
+
+    _localizationStrings = [ZHLocalizationStringManger shareLocalizable].localizableNames;
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]init];
+    actionSheet.title = @"Localization List";
+    [actionSheet addButtonWithTitle:@"Cannel"];
+    for (int i = 0; i < _localizationStrings.count; i ++) {
+        [actionSheet addButtonWithTitle:_localizationStrings[i]];
+    }
+    actionSheet.delegate = self;
+    actionSheet.cancelButtonIndex = 0;
+    [actionSheet showInView:self.view];
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UIActionSheetDelegate
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    [actionSheet dismissWithClickedButtonIndex:buttonIndex animated:YES];
+    [ZHLocalizationStringManger shareLocalizable].nomarLocalizable = _localizationStrings[buttonIndex - 1];
 }
 
 @end

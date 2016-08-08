@@ -1,5 +1,15 @@
 language: objective-c
 xcode_project: ZHLocalizationStringManger/ZHLocalizationStringManger.xcodeproj
 xcode_scheme: ZHLocalizationStringManger
-script: xcodebuild -project ZHLocalizationStringManger/ZHLocalizationStringManger.xcodeproj -target ZHLocalizationStringManger -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script: xcodebuild -project ZHLocalizationStringManger/ZHLocalizationStringManger.xcodeproj
+  -target ZHLocalizationStringManger -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 osx_image: xcode7.3
+deploy:
+  provider: releases
+  skip_cleanup: true
+  on:
+    tags: true
+  user: 15038777234@163.com
+  password:
+    secure: UsTrfe2F6dK8mA3NkurzxSyYTFTA6u5PBaY/CuhDVgmlRSkEjNo1e5UK6gvtU39q+7GcUTP/qYeCdom+Ptx6sq7zNXv81Lmp7MdsmfS5Om2e0fAFrwo74Q176uZC7Uuvzw38B2z1T6t4mIhRpDRmKbsY+3kGp6rqcHQbXFpCPjQ5JGRRtmCIctuopA1IaHvb0Lrz+lnUAHWhT62GsUoTEJdv9h4H5T4DeUoehH1LhWrP+0MYMCK9pHXDeR0i5He14InE1ymH5y9M8rDZKQjEX9Q/z7bg43c2ew37b5d42+g/Mxu1A+NzKJOM7ZMTuXSSwQJaIFGuyhCR3sMnGInhzx0A2hzCaTOELSudizX5N5AEB6QjDEuXVSF/lND2Rf93260hOKcLD46pcz0ReSFiVDkMLMcEPuobsdTE2oNMM/NwPvn0SlJ1T/Illn4JbJSv3KKyUrdBwQRvRymoB5ukslcIevez12/unPO6HjCnEX6sTceCsqam8ujxeDvWgJMSXE/wy7nf8o8aHFhnOzNGt++P5Brjh96MjM5Lyhl5nGhda2NQbgN65O3Koq5LWL2hVUY+9rrW8sxXy984/DYEnAzLL4lRLt1AA3Og3Z7GovJs6BiMHwST3U+BOL0qJytpZAPrtquzBKrdUenkm9KLzf5eQvXrmU5EHrngEkxBjrw=
+after_success: - bash <(curl -s https://codecov.io/bash)
