@@ -1,5 +1,4 @@
 language: objective-c
 xcode_project: ZHLocalizationStringManger/ZHLocalizationStringManger.xcodeproj
 xcode_scheme: ZHLocalizationStringManger
-script:
-xcodebuild -project ZHLocalizationStringManger.xcodeproj -target ZHLocalizationStringManger -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script: xcodebuild -project ZHLocalizationStringManger.xcodeproj -target ZHLocalizationStringManger -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
