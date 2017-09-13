@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZHLocalizationStringManger"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.summary      = "Can facilitate the management localization language"
 
   # This description is used to generate tags and improve search results.

@@ -7,15 +7,29 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #undef NSLocalizedString
-#define NSLocalizedString(key,comment) [[ZHLocalizationStringManger shareLocalizable]localizedString:key]
+#define NSLocalizedString(key,commentKey) [[ZHLocalizationStringManger shareLocalizable] localizedString:key comment:commentKey]
 
 FOUNDATION_EXTERN NSString *const YSLocalizationStringDidChanged; //语言切换的通知
+
 @interface ZHLocalizationStringManger : NSObject // 管理国际化的类
 @property (nonatomic, strong,readonly) NSArray *localizableNames; //获取工程支持的多语言的数组
 @property (nonatomic, copy) NSString *nomarLocalizable;// 默认的语言 默认为英语
 @property (nonatomic, assign) BOOL isSuppoutAppSettingLocalizable; // 是否支持APP内部进行切换语言 默认不支持 强行设置nomarLocalizable 属性会退出程序
-+(instancetype)shareLocalizable; //对类初始化单例
--(NSString *)localizedString:(NSString *)translationKey; // 用NSLocalizedString宏进行调用国际化
+
+/**
+ * 初始化基础语言 默认为 en
+
+ @param baseLocalizeable 基础语言
+ */
++ (void)setupBaseLocalizeable:(NSString *)baseLocalizeable;
+    
++ (instancetype)shareLocalizable; //对类初始化单例
+
+- (NSString *)localizedString:(NSString *)translationKey;
+
+- (NSString *)localizedString:(NSString *)translationKey comment:(NSString *)comment; // 用NSLocalizedString宏进行调用国际化
+
 @end
 
