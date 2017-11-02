@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "ZHLocalizationStringManger"
+  s.name         = "ZHLocalizationStringMangerObjc"
   s.version      = "1.1.0"
   s.summary      = "Can facilitate the management localization language"
 
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "15038777234" => "15038777234@163.com" }
+  s.author             = { "15038777234" => "m15038777234@163.com" }
   # Or just: s.author    = "15038777234"
   # s.authors            = { "15038777234" => "15038777234@163.com" }
   # s.social_media_url   = "http://twitter.com/15038777234"
