@@ -6,7 +6,7 @@
 //  Copyright © 2016年 yoshop. All rights reserved.
 //
 
-#import "ZHLocalizationStringManger.h"
+#import "ZHLocalizationStringManager.h"
 #import <objc/runtime.h>
 
 NSString *const ZHLocalizationStringDidChanged = @"YSLocalizationStringDidChanged";
@@ -15,7 +15,7 @@ NSString *const KLocalizableSetting = @"KLocalizableSetting"; // 本地储存的
 
 static NSString *ZHBaseLocalizeable = @"en"; // 静态储存基础语言 默认为 en
 
-@implementation ZHLocalizationStringManger {
+@implementation ZHLocalizationStringManager {
     NSString *_currentLocalizable;
     NSString *_userCustomLanguageCode;
 }
@@ -23,10 +23,10 @@ static NSString *ZHBaseLocalizeable = @"en"; // 静态储存基础语言 默认�
 @synthesize localizableNames = _localizableNames;
 
 + (instancetype)shareLocalizable {
-   static ZHLocalizationStringManger *localizable;
+   static ZHLocalizationStringManager *localizable;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        localizable = [[ZHLocalizationStringManger alloc]init];
+        localizable = [[ZHLocalizationStringManager alloc]init];
     });
     return localizable;
 }

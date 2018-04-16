@@ -10,7 +10,7 @@
 
 FOUNDATION_EXTERN NSString *const ZHLocalizationStringDidChanged; //语言切换的通知
 // 管理国际化的类
-@interface ZHLocalizationStringManger : NSObject
+@interface ZHLocalizationStringManager : NSObject
 /**
  * 获取工程支持的多语言的数组
  */
@@ -38,7 +38,7 @@ FOUNDATION_EXTERN NSString *const ZHLocalizationStringDidChanged; //语言切换
 /**
  * 对工具进行初始化
 
- @return ZHLocalizationStringManger
+ @return ZHLocalizationStringManager
  */
 + (instancetype)shareLocalizable; //对类初始化单例
 

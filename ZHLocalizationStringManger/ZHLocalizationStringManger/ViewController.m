@@ -1,13 +1,13 @@
 //
 //  ViewController.m
-//  ZHLocalizationStringManger
+//  ZHLocalizationStringManager
 //
 //  Created by 张行 on 16/8/8.
 //  Copyright © 2016年 张行. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "ZHLocalizationStringManger.h"
+#import "ZHLocalizationStringManager.h"
 #import <ZHAlertController/ZHAlertController.h>
 @interface ViewController ()<UIActionSheetDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.titleLabel.text = [NSString stringWithFormat:@"Current Localization:%@  -  %@",[ZHLocalizationStringManger shareLocalizable].nomarLocalizable,NSLocalizedString(@"Hello", @"HELLO")];
+    self.titleLabel.text = [NSString stringWithFormat:@"Current Localization:%@  -  %@",[ZHLocalizationStringManager shareLocalizable].nomarLocalizable,NSLocalizedString(@"Hello", @"HELLO")];
 //    self.titleLabel.text = @"dssaddsa";
 
 
@@ -28,7 +28,7 @@
 }
 - (IBAction)changeLocalization:(id)sender {
 
-    _localizationStrings = [ZHLocalizationStringManger shareLocalizable].localizableNames;
+    _localizationStrings = [ZHLocalizationStringManager shareLocalizable].localizableNames;
     UIActionSheet *actionSheet = [[UIActionSheet alloc]init];
     actionSheet.title = @"Localization List";
     [actionSheet addButtonWithTitle:@"Cannel"];
@@ -50,7 +50,7 @@
 #pragma mark - UIActionSheetDelegate
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     [actionSheet dismissWithClickedButtonIndex:buttonIndex animated:YES];
-    [ZHLocalizationStringManger shareLocalizable].nomarLocalizable = _localizationStrings[buttonIndex - 1];
+    [ZHLocalizationStringManager shareLocalizable].nomarLocalizable = _localizationStrings[buttonIndex - 1];
 }
 
 @end

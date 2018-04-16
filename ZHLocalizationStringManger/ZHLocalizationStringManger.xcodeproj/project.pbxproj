@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D3F00771D58801300B90CE6 /* ZHLocalizationStringManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F00761D58801300B90CE6 /* ZHLocalizationStringManger.m */; };
+		5D1EAEC720843390003B3011 /* ZHLocalizationStringManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F00761D58801300B90CE6 /* ZHLocalizationStringManager.m */; };
+		5D1EAEC8208433FA003B3011 /* ZHLocalizationStringManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3F00751D58801300B90CE6 /* ZHLocalizationStringManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D1EAEC920843470003B3011 /* ZHLocalizationStringManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1EAEBA2084337D003B3011 /* ZHLocalizationStringManager.framework */; };
+		5D1EAECA20843470003B3011 /* ZHLocalizationStringManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1EAEBA2084337D003B3011 /* ZHLocalizationStringManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5D3F007C1D58818800B90CE6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D3F007E1D58818800B90CE6 /* Localizable.strings */; };
 		5DDBE9B41D58594E0074F4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDBE9B31D58594E0074F4EA /* main.m */; };
 		5DDBE9B71D58594E0074F4EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDBE9B61D58594E0074F4EA /* AppDelegate.m */; };
@@ -18,10 +21,36 @@
 		8854FA82E051F851F531CFC2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5235D545424ED8A8E1417069 /* libPods.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5D1EAECB20843470003B3011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DDBE9A71D58594D0074F4EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D1EAEB92084337D003B3011;
+			remoteInfo = ZHLocalizationStringManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5D1EAECD20843470003B3011 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5D1EAECA20843470003B3011 /* ZHLocalizationStringManager.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5235D545424ED8A8E1417069 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D3F00751D58801300B90CE6 /* ZHLocalizationStringManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHLocalizationStringManger.h; sourceTree = "<group>"; };
-		5D3F00761D58801300B90CE6 /* ZHLocalizationStringManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHLocalizationStringManger.m; sourceTree = "<group>"; };
+		5D1EAEBA2084337D003B3011 /* ZHLocalizationStringManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZHLocalizationStringManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D1EAEBD2084337D003B3011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D3F00751D58801300B90CE6 /* ZHLocalizationStringManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHLocalizationStringManager.h; sourceTree = "<group>"; };
+		5D3F00761D58801300B90CE6 /* ZHLocalizationStringManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHLocalizationStringManager.m; sourceTree = "<group>"; };
 		5D3F007D1D58818800B90CE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5D3F007F1D58818A00B90CE6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5DAC52771D5887B3002F6D55 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
@@ -39,10 +68,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5D1EAEB62084337D003B3011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5DDBE9AC1D58594D0074F4EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D1EAEC920843470003B3011 /* ZHLocalizationStringManager.framework in Frameworks */,
 				8854FA82E051F851F531CFC2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,11 +95,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5D1EAEBB2084337D003B3011 /* ZHLocalizationStringManager */ = {
+			isa = PBXGroup;
+			children = (
+				5D3F00751D58801300B90CE6 /* ZHLocalizationStringManager.h */,
+				5D3F00761D58801300B90CE6 /* ZHLocalizationStringManager.m */,
+				5D1EAEBD2084337D003B3011 /* Info.plist */,
+			);
+			path = ZHLocalizationStringManager;
+			sourceTree = "<group>";
+		};
 		5D3F00741D58801300B90CE6 /* LocalizationString */ = {
 			isa = PBXGroup;
 			children = (
-				5D3F00751D58801300B90CE6 /* ZHLocalizationStringManger.h */,
-				5D3F00761D58801300B90CE6 /* ZHLocalizationStringManger.m */,
 			);
 			path = LocalizationString;
 			sourceTree = "<group>";
@@ -71,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				5DDBE9B11D58594E0074F4EA /* ZHLocalizationStringManger */,
+				5D1EAEBB2084337D003B3011 /* ZHLocalizationStringManager */,
 				5DDBE9B01D58594D0074F4EA /* Products */,
 				EE08FF6B7773EFC4C5C5391B /* Pods */,
 				2BE8715B7D3A4C8441BA44A1 /* Frameworks */,
@@ -81,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				5DDBE9AF1D58594D0074F4EA /* ZHLocalizationStringManger.app */,
+				5D1EAEBA2084337D003B3011 /* ZHLocalizationStringManager.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,7 +169,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5D1EAEB72084337D003B3011 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D1EAEC8208433FA003B3011 /* ZHLocalizationStringManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		5D1EAEB92084337D003B3011 /* ZHLocalizationStringManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D1EAEC52084337D003B3011 /* Build configuration list for PBXNativeTarget "ZHLocalizationStringManager" */;
+			buildPhases = (
+				5D1EAEB52084337D003B3011 /* Sources */,
+				5D1EAEB62084337D003B3011 /* Frameworks */,
+				5D1EAEB72084337D003B3011 /* Headers */,
+				5D1EAEB82084337D003B3011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZHLocalizationStringManager;
+			productName = ZHLocalizationStringManager;
+			productReference = 5D1EAEBA2084337D003B3011 /* ZHLocalizationStringManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5DDBE9AE1D58594D0074F4EA /* ZHLocalizationStringManger */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5DDBE9C61D58594E0074F4EA /* Build configuration list for PBXNativeTarget "ZHLocalizationStringManger" */;
@@ -133,10 +209,12 @@
 				5DDBE9AD1D58594D0074F4EA /* Resources */,
 				D6FC618FFF838752FD9922DC /* Embed Pods Frameworks */,
 				D9DF1D0815DDE89C32B2F8C9 /* Copy Pods Resources */,
+				5D1EAECD20843470003B3011 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5D1EAECC20843470003B3011 /* PBXTargetDependency */,
 			);
 			name = ZHLocalizationStringManger;
 			productName = ZHLocalizationStringManger;
@@ -152,6 +230,11 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "张行";
 				TargetAttributes = {
+					5D1EAEB92084337D003B3011 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = 9RWES6K38C;
+						ProvisioningStyle = Automatic;
+					};
 					5DDBE9AE1D58594D0074F4EA = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 9RWES6K38C;
@@ -173,11 +256,19 @@
 			projectRoot = "";
 			targets = (
 				5DDBE9AE1D58594D0074F4EA /* ZHLocalizationStringManger */,
+				5D1EAEB92084337D003B3011 /* ZHLocalizationStringManager */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5D1EAEB82084337D003B3011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5DDBE9AD1D58594D0074F4EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,18 +331,33 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5D1EAEB52084337D003B3011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D1EAEC720843390003B3011 /* ZHLocalizationStringManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5DDBE9AB1D58594D0074F4EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5DDBE9BA1D58594E0074F4EA /* ViewController.m in Sources */,
-				5D3F00771D58801300B90CE6 /* ZHLocalizationStringManger.m in Sources */,
 				5DDBE9B71D58594E0074F4EA /* AppDelegate.m in Sources */,
 				5DDBE9B41D58594E0074F4EA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D1EAECC20843470003B3011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D1EAEB92084337D003B3011 /* ZHLocalizationStringManager */;
+			targetProxy = 5D1EAECB20843470003B3011 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5D3F007E1D58818800B90CE6 /* Localizable.strings */ = {
@@ -282,6 +388,85 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5D1EAEC32084337D003B3011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9RWES6K38C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ZHLocalizationStringManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.globalegrow.ZHLocalizationStringManager;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5D1EAEC42084337D003B3011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9RWES6K38C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ZHLocalizationStringManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.globalegrow.ZHLocalizationStringManager;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5DDBE9C41D58594E0074F4EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -371,8 +556,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9RWES6K38C;
 				INFOPLIST_FILE = ZHLocalizationStringManger/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhanghang.ZHLocalizationStringManger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,8 +572,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9RWES6K38C;
 				INFOPLIST_FILE = ZHLocalizationStringManger/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhanghang.ZHLocalizationStringManger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,6 +584,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5D1EAEC52084337D003B3011 /* Build configuration list for PBXNativeTarget "ZHLocalizationStringManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D1EAEC32084337D003B3011 /* Debug */,
+				5D1EAEC42084337D003B3011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5DDBE9AA1D58594D0074F4EA /* Build configuration list for PBXProject "ZHLocalizationStringManger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
